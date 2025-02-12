@@ -14,19 +14,24 @@ class Personas:
     def __init__(self):
         pass
     
-    def Lista_personas(self):
+    def lista_personas(self):
         try:
             personas = db.child("personas").get()
-            response =(
+            response ={
                 "status":200,
                 "message":"Todo bien",
                 "personas":dict(personas.val())
-            )
+            }
             return response
         except Exception as error:
-            response =(
+            print(f"{error.args[0]}")
+            response ={
                 "status":400,
-                "message":"Algo fallo con el servidor",
-                "personas":dict(personas.val())
-            )
+                "message":"Error en el servidor",
+                "personas":{}
+                }
+            return response
+persona = Personas()
+print(f"{persona.lista_personas()}")
 
+            

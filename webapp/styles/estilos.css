@@ -3,11 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 35px;
-    background-color: #215723;
+    background-color: #44b648;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
     width: 100vh;
     margin: 20px;
     border-radius: 5px;
-    border-color: color rgb(25, 25, 25);
+    border-color: color rgb(228, 126, 206);
 }
