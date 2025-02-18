@@ -1,7 +1,7 @@
 import web
 from models.personas import Personas
 
-render = web.template.render("views", base = "master")
+render = web.template.render("webapp/views", base = "master")
 
 class ListaPersonas:
 
