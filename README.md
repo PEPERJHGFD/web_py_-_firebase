@@ -1,55 +1,42 @@
-# web_py_-_firebase
-Hola mundo de web.py y Firebase
+# firebase_y_webpy
+# web
 
-### Firebase y web.py
-Esto es para crear una vista en index.html que vaya hacia listadopersonas.html
-y en este se debe de ver el listado correspondiente
-
-## 1. Crear un virtual environment
-
-````shell
+## 1. crear un Virtual Enviroment 
+```shell
 python3 -m venv .venv
-````
-
-## 2. Activar un ambiente virtual
-
-````shell
-source '.venv/bin/activate'
-````
-
-## 3. Salir de virtual environment 
-
-````shell
-deactivate
-````
-
-## 4. Eliminar virtual environment
-
-````shell
-rm -rf /workspaces/webpy/.venv
-````
-
-## 5. Actualizar pip
-
-````shell
-pip install --upgrade pip
-````
-
-## 6. Instalar la librería pyrebase4
-
-````shell
-pip install pyrebase4
+```
+## 2. Activar un virtual enviroment
+```shell
+source .venv/bin/activate
+```
+## 3. Desactivar un virtual enviroment
+```shell
+ deactivate
+ ```
+ ## 4. Actualizar pip
+ ```shell
+  pip install --upgrade pip
+  ```
+## 5. Instalar web.py
+ ```shell
+ pip install web.py
+ pip install pyrebase4  
 pip install setuptools
-````
-
-## 7. Crear requirements.txt
-
-````shell
-pip install setuptools
-````
-
-## 8. Crear el archivo runtime.txt
-
-````shell
-python3 -V > runtime.txt
-````
+pip install --upgrade pip 
+ ```
+ ## 6. Crear el requirements
+ ```shell
+ pip freeze > requirements.txt
+ ```
+ 
+ ## 7. 
+ ```shell
+ pip freeze > requirements.txt
+ ```
+ ## 8. Guardar cambios 
+ '''shell
+  git add .
+  git commit -m "UPDATED"
+  git push -u origin main
+  '''
+  
